@@ -75,6 +75,9 @@ def main():
         # Initiate run_presc_data_transform Script
         df_city_final = city_report(df_city_sel, df_fact_sel)
         df_presc_final = top_5_Prescribers(df_fact_sel)
+        df_city_final.write.csv("../output/city_dimension/df_city_final.csv")
+        df_presc_final.write.csv("../output/presc/df_presc_final.csv")
+        
         # Validation for df_city_final
         df_top10_rec(df_city_final, "df_city_final")
         df_print_schema(df_city_final, "df_city_final")
@@ -90,8 +93,8 @@ def main():
         
         # Persist Data
         # Persist data at Hive
-        # data_persist_hive(spark = spark, df = df_city_final ,dfName = 'df_city_final' ,partitionBy = 'delivery_date',mode='append')
-        # data_persist_hive(spark = spark, df = df_presc_final,dfName = 'df_presc_final',partitionBy = 'delivery_date',mode='append')
+        data_persist_hive(spark = spark, df = df_city_final ,dfName = 'df_city_final' ,partitionBy = 'delivery_date',mode='append')
+        data_persist_hive(spark = spark, df = df_presc_final,dfName = 'df_presc_final',partitionBy = 'delivery_date',mode='append')
 
         # persist data at Postgre
         data_persist_postgre(spark=spark, df=df_city_final, dfName='df_city_final', url="jdbc:postgresql://localhost:6432/prescpipeline", driver="org.postgresql.Driver", dbtable='df_city_final', mode="append", user=gav.user, password=gav.password)
