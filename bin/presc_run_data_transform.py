@@ -64,14 +64,18 @@ def top_5_Prescribers(df_fact_sel):
     Total Drug Cost
     """
     try:
-        logger.info("Transform - top_5_Prescribers() is started...")
+        # Calculate total TRX_CNT prescribed for each prescriber.
+        df_fact_grp = df_fact_sel.groupBy(df_fact_sel.presc_id, df_fact_sel.presc_fullname, df_fact_sel.presc_state,
+                                          df_fact_sel.years_of_exp).agg(sum("total_day_supply").alias("total_day_supply"),
+                                                                        sum("total_drug_cost").alias("total_drug_cost"),
+                                                                        sum("trx_cnt").alias("trx_cnt"))
         spec = Window.partitionBy("presc_state").orderBy(col("trx_cnt").desc())
-        df_presc_final = df_fact_sel.select("presc_id", "presc_fullname", "presc_state", "country_name",
+        df_presc_final = df_fact_grp.select("presc_id", "presc_fullname", "presc_state",
                                             "years_of_exp", "trx_cnt", "total_day_supply", "total_drug_cost")\
             .filter((df_fact_sel.years_of_exp >= 20) & (df_fact_sel.years_of_exp <= 50)) \
             .withColumn("dense_rank", dense_rank().over(spec)) \
             .filter(col("dense_rank") <= 5) \
-            .select("presc_id", "presc_fullname", "presc_state", "country_name", "years_of_exp", "trx_cnt",
+            .select("presc_id", "presc_fullname", "presc_state", "years_of_exp", "trx_cnt",
                     "total_day_supply", "total_drug_cost")
     except Exception as exp:
         logger.error("Error in the method - top_5_Prescribers(). Please check the Stack Trace. " + str(exp),
