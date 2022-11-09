@@ -1,19 +1,19 @@
-"09-Nov-22 00:58:51" - root - INFO - run_presc_pipeline is Started ...
-"09-Nov-22 00:58:51" - root - INFO - main() is started ...
-"09-Nov-22 00:58:51" - create_objects - INFO - get_spark_object() is started. The 'PROD' envn is used.
-"09-Nov-22 00:59:23" - create_objects - INFO - Spark Object is created ...
-"09-Nov-22 00:59:34" - validations - INFO - Validate the Spark object by printing Current Date - [Row(current_date()=datetime.date(2022, 11, 9))]
-"09-Nov-22 00:59:34" - validations - INFO - Spark object is validated. Spark Object is ready.
-"09-Nov-22 00:59:37" - presc_run_data_ingest - INFO - load_files() is Started ...
-"09-Nov-22 00:59:41" - presc_run_data_ingest - INFO - The input File PrescPipeline/staging/dimension_city is loaded to the data frame. The load_files() Function is completed.
-"09-Nov-22 00:59:44" - presc_run_data_ingest - INFO - load_files() is Started ...
-"09-Nov-22 01:01:10" - presc_run_data_ingest - INFO - The input File PrescPipeline/staging/fact is loaded to the data frame. The load_files() Function is completed.
-"09-Nov-22 01:01:10" - validations - INFO - The DataFrame Validation by count df_count() is started for Dataframe df_city...
-"09-Nov-22 01:01:13" - validations - INFO - The DataFrame count is 28338.
-"09-Nov-22 01:01:13" - validations - INFO - The DataFrame Validation by count df_count() is completed.
-"09-Nov-22 01:01:13" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_city...
-"09-Nov-22 01:01:13" - validations - INFO - The DataFrame top 10 records are:.
-"09-Nov-22 01:01:15" - validations - INFO - 
+"09-Nov-22 15:28:37" - root - INFO - run_presc_pipeline is Started ...
+"09-Nov-22 15:28:37" - root - INFO - main() is started ...
+"09-Nov-22 15:28:37" - create_objects - INFO - get_spark_object() is started. The 'TEST' envn is used.
+"09-Nov-22 15:28:40" - create_objects - INFO - Spark Object is created ...
+"09-Nov-22 15:28:44" - validations - INFO - Validate the Spark object by printing Current Date - [Row(current_date()=datetime.date(2022, 11, 9))]
+"09-Nov-22 15:28:44" - validations - INFO - Spark object is validated. Spark Object is ready.
+"09-Nov-22 15:28:44" - presc_run_data_ingest - INFO - load_files() is Started ...
+"09-Nov-22 15:28:44" - presc_run_data_ingest - INFO - The input File /home/xiaoqi/PycharmProjects/prescriberAnalytics/src/main/python/bin/../staging/dimension_city/us_cities_dimension.parquet is loaded to the data frame. The load_files() Function is completed.
+"09-Nov-22 15:28:44" - presc_run_data_ingest - INFO - load_files() is Started ...
+"09-Nov-22 15:30:28" - presc_run_data_ingest - INFO - The input File /home/xiaoqi/PycharmProjects/prescriberAnalytics/src/main/python/bin/../staging/fact/USA_Presc_Medicare_Data_2021.csv is loaded to the data frame. The load_files() Function is completed.
+"09-Nov-22 15:30:28" - validations - INFO - The DataFrame Validation by count df_count() is started for Dataframe df_city...
+"09-Nov-22 15:30:28" - validations - INFO - The DataFrame count is 28338.
+"09-Nov-22 15:30:28" - validations - INFO - The DataFrame Validation by count df_count() is completed.
+"09-Nov-22 15:30:28" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_city...
+"09-Nov-22 15:30:28" - validations - INFO - The DataFrame top 10 records are:.
+"09-Nov-22 15:30:29" - validations - INFO - 
  	         city    city_ascii state_id            state_name  county_fips           county_name      lat       lng  population  density             timezone                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 zips
      New York      New York       NY              New York        36061              New York  40.6943  -73.9249    18713220    10715     America/New_York  11229 11226 11225 11224 11222 11221 11220 11385 10169 10168 10167 10165 10162 10282 10280 10040 10044 11109 11104 11105 11379 11378 11377 11697 11694 11692 11693 11691 10271 10279 10278 10075 10302 10301 10452 11451 10475 10474 10471 10470 10473 10472 11228 11223 10103 11368 11369 11366 11367 11364 11365 11362 11363 11360 11361 10028 10029 10026 10027 10024 10025 10022 10023 10020 10021 11212 11213 11210 11211 11216 11217 11214 11215 11218 11219 10152 10153 10154 10307 10306 10305 11429 10310 10311 10312 10314 11432 11433 11430 11436 11434 11435 10453 10451 10457 10456 10455 10454 10459 10458 10128 10004 10005 10006 10007 10001 10002 10003 10009 11238 11239 11230 11231 11232 11233 11234 11235 11236 11237 11375 11374 11371 11370 11373 11372 10170 10171 10172 10173 10174 10177 11351 10039 10038 10035 10034 10037 10036 10031 10030 10033 10032 11201 11208 11203 11205 11204 11207 11206 11209 11411 11412 11413 11414 11415 11416 11417 11418 11419 11101 11102 11103 11106 11001 11005 11004 10065 10069 10199 10309 10308 10304 10303 11428 11421 11420 11423 11422 11425 11424 11427 11426 10466 10467 10464 10465 10462 10463 10460 10461 10468 10469 10119 10115 10112 10110 10111 11359 11358 11357 11356 11355 11354 10019 10018 10013 10012 10011 10010 10017 10016 10014 10008 10041 10043 10055 10060 10080 10081 10087 10090 10101 10102 10104 10105 10106 10107 10108 10109 10113 10114 10116 10117 10118 10120 10121 10122 10123 10124 10125 10126 10129 10130 10131 10132 10133 10138 10150 10151 10155 10156 10157 10158 10159 10160 10163 10164 10166 10175 10176 10178 10179 10185 10203 10211 10212 10213 10242 10249 10256 10258 10259 10260 10261 10265 10268 10269 10270 10272 10273 10274 10275 10276 10277 10281 10285 10286 10313 11120 11202 11241 11242 11243 11245 11247 11249 11251 11252 11256 11352 11380 11381 11386 11405 11431 11437 11439 11499 11690 11695
   Los Angeles   Los Angeles       CA            California         6037           Los Angeles  34.1139 -118.4068    12750807     3276  America/Los_Angeles                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              90291 90293 90292 91316 91311 90037 90031 90008 90004 90005 90006 90007 90001 90002 90003 90710 90089 91344 91345 91340 91342 91343 90035 90034 90036 90033 90032 90039 90247 90248 91436 91371 91605 91604 91607 91601 91602 90402 90068 90069 90062 90063 90061 90066 90067 90064 90065 91326 91324 91325 90013 90012 90011 90010 90017 90016 90015 90014 90019 90090 90095 90094 91042 91040 91411 91352 91356 90041 90042 90043 90044 90045 90046 90047 90048 90049 90018 91423 90210 91303 91304 91306 91307 90079 90071 90077 90059 91608 91606 91331 91330 91335 90026 90027 90024 90025 90023 90020 90021 90028 90029 90272 90732 90731 90230 91406 91405 91403 91402 91401 91367 91364 90038 90057 90058 90744 90501 90502 90009 90030 90050 90051 90053 90054 90055 90060 90070 90072 90074 90075 90076 90078 90080 90081 90082 90083 90084 90086 90087 90088 90093 90099 90134 90189 90213 90294 90295 90296 90733 90734 90748 91041 91043 91305 91308 91309 91313 91327 91328 91329 91333 91334 91337 91346 91353 91357 91365 91392 91393 91394 91395 91396 91404 91407 91408 91409 91410 91412 91413 91416 91426 91470 91482 91495 91496 91499 91603 91609 91610 91611 91612 91614 91615 91616 91617 91618
@@ -25,13 +25,13 @@
       Atlanta       Atlanta       GA               Georgia        13121                Fulton  33.7627  -84.4224     5449398     1441     America/New_York                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            30334 30331 30332 30309 30308 30305 30307 30303 30354 30327 30322 30326 30324 30319 30342 30306 30318 30316 30317 30314 30315 30312 30313 30310 30311 30363 30301 30302 30304 30321 30325 30333 30343 30348 30353 30355 30357 30361 30368 30369 30370 30371 30375 30377 30392 30394 30398 31106 31107 31126 31139 31141 31193 31195 31196
    Washington    Washington       DC  District of Columbia        11001  District of Columbia  38.9047  -77.0163     5379184     4457     America/New_York                                                                                                                                                  20010 20011 20012 20015 20228 20520 20307 20418 20319 20024 20510 20593 20020 20427 20540 20240 20245 20204 20202 20390 20006 20005 20004 20003 20002 20009 20008 20535 20317 20405 20057 20052 20053 20017 20018 20565 20566 20560 20260 20064 20551 20553 20019 20230 20373 20007 20032 20036 20037 20506 20001 20045 20016 20013 20022 20026 20027 20029 20030 20033 20035 20038 20039 20040 20042 20043 20044 20047 20049 20050 20055 20056 20058 20059 20060 20061 20062 20063 20065 20066 20067 20068 20069 20070 20071 20073 20074 20075 20076 20077 20078 20080 20081 20082 20090 20091 20201 20203 20206 20207 20208 20210 20211 20212 20213 20214 20215 20216 20217 20218 20219 20220 20221 20222 20223 20224 20226 20227 20229 20232 20233 20235 20237 20238 20239 20241 20242 20244 20250 20251 20252 20254 20261 20262 20265 20266 20268 20270 20277 20289 20299 20301 20303 20306 20310 20314 20318 20330 20340 20350 20355 20370 20372 20374 20375 20376 20380 20388 20389 20391 20392 20393 20394 20395 20398 20401 20402 20403 20404 20406 20407 20408 20410 20411 20412 20413 20414 20415 20416 20417 20419 20420 20421 20422 20423 20424 20425 20426 20428 20429 20431 20433 20434 20435 20436 20437 20439 20440 20441 20442 20444 20447 20451 20453 20456 20460 20463 20468 20469 20470 20472 20500 20501 20502 20503 20504 20505 20507 20508 20509 20511 20515 20521 20522 20523 20524 20525 20526 20527 20528 20529 20530 20531 20533 20534 20536 20537 20538 20539 20541 20542 20543 20544 20546 20547 20548 20549 20552 20554 20555 20557 20559 20570 20571 20572 20573 20575 20576 20577 20578 20579 20580 20581 20585 20586 20590 20591 20594 20597 20599 56901 56902 56904 56908 56915 56920 56933 56935 56944 56945 56950 56965 56967 56972 56998 56999
        Boston        Boston       MA         Massachusetts        25025               Suffolk  42.3188  -71.0846     4688346     5532     America/New_York                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    02120 02121 02122 02124 02125 02126 02127 02128 02129 02467 02210 02215 02119 02118 02111 02110 02113 02115 02114 02116 02199 02134 02136 02135 02132 02131 02130 02203 02163 02152 02108 02109 02112 02117 02123 02133 02137 02196 02201 02205 02206 02211 02212 02217 02222 02241 02283 02284 02293 02297 02298
-"09-Nov-22 01:01:15" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
-"09-Nov-22 01:01:15" - validations - INFO - The DataFrame Validation by count df_count() is started for Dataframe df_fact...
-"09-Nov-22 01:01:34" - validations - INFO - The DataFrame count is 24964300.
-"09-Nov-22 01:01:34" - validations - INFO - The DataFrame Validation by count df_count() is completed.
-"09-Nov-22 01:01:34" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_fact...
-"09-Nov-22 01:01:34" - validations - INFO - The DataFrame top 10 records are:.
-"09-Nov-22 01:01:34" - validations - INFO - 
+"09-Nov-22 15:30:29" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
+"09-Nov-22 15:30:29" - validations - INFO - The DataFrame Validation by count df_count() is started for Dataframe df_fact...
+"09-Nov-22 15:30:41" - validations - INFO - The DataFrame count is 24964300.
+"09-Nov-22 15:30:41" - validations - INFO - The DataFrame Validation by count df_count() is completed.
+"09-Nov-22 15:30:41" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_fact...
+"09-Nov-22 15:30:41" - validations - INFO - The DataFrame top 10 records are:.
+"09-Nov-22 15:30:42" - validations - INFO - 
  	        npi nppes_provider_last_org_name nppes_provider_first_name nppes_provider_city nppes_provider_state specialty_description description_flag                  drug_name            generic_name  bene_count  total_claim_count  total_30_day_fill_count  total_day_supply  total_drug_cost  bene_count_ge65 bene_count_ge65_suppress_flag  total_claim_count_ge65 ge65_suppress_flag  total_30_day_fill_count_ge65  total_day_supply_ge65  total_drug_cost_ge65 years_of_exp
  2006000252                    ENKESHAFI                   ARDALAN          CUMBERLAND                   MD     Internal Medicine                S       ATORVASTATIN CALCIUM    ATORVASTATIN CALCIUM         NaN                 13                     15.0               450           139.32              NaN                             *                    13.0               None                          15.0                  450.0                139.32       = 45.0
  2006000252                    ENKESHAFI                   ARDALAN          CUMBERLAND                   MD     Internal Medicine                S          CIPROFLOXACIN HCL       CIPROFLOXACIN HCL         NaN                 11                     11.0                96            80.99              NaN                             *                     NaN                  *                           NaN                    NaN                   NaN       = 43.0
@@ -43,17 +43,13 @@
  2006000252                    ENKESHAFI                   ARDALAN          CUMBERLAND                   MD     Internal Medicine                S               LEVOFLOXACIN            LEVOFLOXACIN        26.0                 26                     26.0               159           222.41              NaN                             #                     NaN                  #                           NaN                    NaN                   NaN       = 53.0
  2006000252                    ENKESHAFI                   ARDALAN          CUMBERLAND                   MD     Internal Medicine                S                 LISINOPRIL              LISINOPRIL        14.0                 31                     32.0               960           129.24              NaN                             #                     NaN                  #                           NaN                    NaN                   NaN       = 35.0
  2006000252                    ENKESHAFI                   ARDALAN          CUMBERLAND                   MD     Internal Medicine                S        METOPROLOL TARTRATE     METOPROLOL TARTRATE        14.0                 33                     37.0              1050           183.29             14.0                          None                    33.0               None                          37.0                 1050.0                183.29       = 51.0
-"09-Nov-22 01:01:34" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
-"09-Nov-22 01:01:34" - presc_run_data_preprocessing - INFO - perform_data_clean() is started ...
-"09-Nov-22 01:01:34" - presc_run_data_preprocessing - INFO - perform_data_clean() is started for df_fact dataframe...
-"09-Nov-22 01:01:36" - presc_run_data_preprocessing - INFO - The number of Null values in fact dimension dataFrame has:.
-"09-Nov-22 01:08:33" - presc_run_data_preprocessing - INFO - 
- 	 presc_id  presc_city  presc_state  presc_spclt  years_of_exp  drug_name  trx_cnt  total_day_supply  total_drug_cost  country_name  presc_fullname
-       22           0            0            0             0        217        2                 0                0             0               0
-"09-Nov-22 01:08:34" - presc_run_data_preprocessing - INFO - perform_data_clean() is completed...
-"09-Nov-22 01:08:34" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_city_sel...
-"09-Nov-22 01:08:34" - validations - INFO - The DataFrame top 10 records are:.
-"09-Nov-22 01:08:34" - validations - INFO - 
+"09-Nov-22 15:30:42" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
+"09-Nov-22 15:30:42" - presc_run_data_preprocessing - INFO - perform_data_clean() is started ...
+"09-Nov-22 15:30:42" - presc_run_data_preprocessing - INFO - perform_data_clean() is started for df_fact dataframe...
+"09-Nov-22 15:30:42" - presc_run_data_preprocessing - INFO - perform_data_clean() is completed...
+"09-Nov-22 15:30:42" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_city_sel...
+"09-Nov-22 15:30:42" - validations - INFO - The DataFrame top 10 records are:.
+"09-Nov-22 15:30:42" - validations - INFO - 
  	         city state_id            state_name           county_name  population                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 zips
      NEW YORK       NY              NEW YORK              NEW YORK    18713220  11229 11226 11225 11224 11222 11221 11220 11385 10169 10168 10167 10165 10162 10282 10280 10040 10044 11109 11104 11105 11379 11378 11377 11697 11694 11692 11693 11691 10271 10279 10278 10075 10302 10301 10452 11451 10475 10474 10471 10470 10473 10472 11228 11223 10103 11368 11369 11366 11367 11364 11365 11362 11363 11360 11361 10028 10029 10026 10027 10024 10025 10022 10023 10020 10021 11212 11213 11210 11211 11216 11217 11214 11215 11218 11219 10152 10153 10154 10307 10306 10305 11429 10310 10311 10312 10314 11432 11433 11430 11436 11434 11435 10453 10451 10457 10456 10455 10454 10459 10458 10128 10004 10005 10006 10007 10001 10002 10003 10009 11238 11239 11230 11231 11232 11233 11234 11235 11236 11237 11375 11374 11371 11370 11373 11372 10170 10171 10172 10173 10174 10177 11351 10039 10038 10035 10034 10037 10036 10031 10030 10033 10032 11201 11208 11203 11205 11204 11207 11206 11209 11411 11412 11413 11414 11415 11416 11417 11418 11419 11101 11102 11103 11106 11001 11005 11004 10065 10069 10199 10309 10308 10304 10303 11428 11421 11420 11423 11422 11425 11424 11427 11426 10466 10467 10464 10465 10462 10463 10460 10461 10468 10469 10119 10115 10112 10110 10111 11359 11358 11357 11356 11355 11354 10019 10018 10013 10012 10011 10010 10017 10016 10014 10008 10041 10043 10055 10060 10080 10081 10087 10090 10101 10102 10104 10105 10106 10107 10108 10109 10113 10114 10116 10117 10118 10120 10121 10122 10123 10124 10125 10126 10129 10130 10131 10132 10133 10138 10150 10151 10155 10156 10157 10158 10159 10160 10163 10164 10166 10175 10176 10178 10179 10185 10203 10211 10212 10213 10242 10249 10256 10258 10259 10260 10261 10265 10268 10269 10270 10272 10273 10274 10275 10276 10277 10281 10285 10286 10313 11120 11202 11241 11242 11243 11245 11247 11249 11251 11252 11256 11352 11380 11381 11386 11405 11431 11437 11439 11499 11690 11695
   LOS ANGELES       CA            CALIFORNIA           LOS ANGELES    12750807                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              90291 90293 90292 91316 91311 90037 90031 90008 90004 90005 90006 90007 90001 90002 90003 90710 90089 91344 91345 91340 91342 91343 90035 90034 90036 90033 90032 90039 90247 90248 91436 91371 91605 91604 91607 91601 91602 90402 90068 90069 90062 90063 90061 90066 90067 90064 90065 91326 91324 91325 90013 90012 90011 90010 90017 90016 90015 90014 90019 90090 90095 90094 91042 91040 91411 91352 91356 90041 90042 90043 90044 90045 90046 90047 90048 90049 90018 91423 90210 91303 91304 91306 91307 90079 90071 90077 90059 91608 91606 91331 91330 91335 90026 90027 90024 90025 90023 90020 90021 90028 90029 90272 90732 90731 90230 91406 91405 91403 91402 91401 91367 91364 90038 90057 90058 90744 90501 90502 90009 90030 90050 90051 90053 90054 90055 90060 90070 90072 90074 90075 90076 90078 90080 90081 90082 90083 90084 90086 90087 90088 90093 90099 90134 90189 90213 90294 90295 90296 90733 90734 90748 91041 91043 91305 91308 91309 91313 91327 91328 91329 91333 91334 91337 91346 91353 91357 91365 91392 91393 91394 91395 91396 91404 91407 91408 91409 91410 91412 91413 91416 91426 91470 91482 91495 91496 91499 91603 91609 91610 91611 91612 91614 91615 91616 91617 91618
@@ -65,43 +61,43 @@
       ATLANTA       GA               GEORGIA                FULTON     5449398                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            30334 30331 30332 30309 30308 30305 30307 30303 30354 30327 30322 30326 30324 30319 30342 30306 30318 30316 30317 30314 30315 30312 30313 30310 30311 30363 30301 30302 30304 30321 30325 30333 30343 30348 30353 30355 30357 30361 30368 30369 30370 30371 30375 30377 30392 30394 30398 31106 31107 31126 31139 31141 31193 31195 31196
    WASHINGTON       DC  DISTRICT OF COLUMBIA  DISTRICT OF COLUMBIA     5379184                                                                                                                                                  20010 20011 20012 20015 20228 20520 20307 20418 20319 20024 20510 20593 20020 20427 20540 20240 20245 20204 20202 20390 20006 20005 20004 20003 20002 20009 20008 20535 20317 20405 20057 20052 20053 20017 20018 20565 20566 20560 20260 20064 20551 20553 20019 20230 20373 20007 20032 20036 20037 20506 20001 20045 20016 20013 20022 20026 20027 20029 20030 20033 20035 20038 20039 20040 20042 20043 20044 20047 20049 20050 20055 20056 20058 20059 20060 20061 20062 20063 20065 20066 20067 20068 20069 20070 20071 20073 20074 20075 20076 20077 20078 20080 20081 20082 20090 20091 20201 20203 20206 20207 20208 20210 20211 20212 20213 20214 20215 20216 20217 20218 20219 20220 20221 20222 20223 20224 20226 20227 20229 20232 20233 20235 20237 20238 20239 20241 20242 20244 20250 20251 20252 20254 20261 20262 20265 20266 20268 20270 20277 20289 20299 20301 20303 20306 20310 20314 20318 20330 20340 20350 20355 20370 20372 20374 20375 20376 20380 20388 20389 20391 20392 20393 20394 20395 20398 20401 20402 20403 20404 20406 20407 20408 20410 20411 20412 20413 20414 20415 20416 20417 20419 20420 20421 20422 20423 20424 20425 20426 20428 20429 20431 20433 20434 20435 20436 20437 20439 20440 20441 20442 20444 20447 20451 20453 20456 20460 20463 20468 20469 20470 20472 20500 20501 20502 20503 20504 20505 20507 20508 20509 20511 20515 20521 20522 20523 20524 20525 20526 20527 20528 20529 20530 20531 20533 20534 20536 20537 20538 20539 20541 20542 20543 20544 20546 20547 20548 20549 20552 20554 20555 20557 20559 20570 20571 20572 20573 20575 20576 20577 20578 20579 20580 20581 20585 20586 20590 20591 20594 20597 20599 56901 56902 56904 56908 56915 56920 56933 56935 56944 56945 56950 56965 56967 56972 56998 56999
        BOSTON       MA         MASSACHUSETTS               SUFFOLK     4688346                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    02120 02121 02122 02124 02125 02126 02127 02128 02129 02467 02210 02215 02119 02118 02111 02110 02113 02115 02114 02116 02199 02134 02136 02135 02132 02131 02130 02203 02163 02152 02108 02109 02112 02117 02123 02133 02137 02196 02201 02205 02206 02211 02212 02217 02222 02241 02283 02284 02293 02297 02298
-"09-Nov-22 01:08:34" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
-"09-Nov-22 01:08:34" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_fact_sel...
-"09-Nov-22 01:08:34" - validations - INFO - The DataFrame top 10 records are:.
-"09-Nov-22 01:10:48" - validations - INFO - 
+"09-Nov-22 15:30:42" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
+"09-Nov-22 15:30:42" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_fact_sel...
+"09-Nov-22 15:30:42" - validations - INFO - The DataFrame top 10 records are:.
+"09-Nov-22 15:33:10" - validations - INFO - 
  	   presc_id     presc_city presc_state              presc_spclt  years_of_exp                       drug_name  trx_cnt  total_day_supply  total_drug_cost country_name presc_fullname
--2147479517  DOUGLASSVILLE          PA      Physician Assistant            32                    AZITHROMYCIN       14                76           186.00          USA   DIANA BURICK
--2147479517  DOUGLASSVILLE          PA      Physician Assistant            48                     AMOXICILLIN       20               200           114.84          USA   DIANA BURICK
--2147479517  DOUGLASSVILLE          PA      Physician Assistant            32               CIPROFLOXACIN HCL       11                88            59.09          USA   DIANA BURICK
 -2147479517  DOUGLASSVILLE          PA      Physician Assistant            37  AMOXICILLIN-CLAVULANATE POTASS       16               154           227.62          USA   DIANA BURICK
+-2147479517  DOUGLASSVILLE          PA      Physician Assistant            32                    AZITHROMYCIN       14                76           186.00          USA   DIANA BURICK
 -2147479517  DOUGLASSVILLE          PA      Physician Assistant            39   SULFAMETHOXAZOLE-TRIMETHOPRIM       22               191           106.78          USA   DIANA BURICK
+-2147479517  DOUGLASSVILLE          PA      Physician Assistant            48                     AMOXICILLIN       20               200           114.84          USA   DIANA BURICK
 -2147479517  DOUGLASSVILLE          PA      Physician Assistant            46                      PREDNISONE       32               220           105.85          USA   DIANA BURICK
 -2147479517  DOUGLASSVILLE          PA      Physician Assistant            51          FLUTICASONE PROPIONATE       15               570           160.94          USA   DIANA BURICK
 -2147479517  DOUGLASSVILLE          PA      Physician Assistant            40                      CEPHALEXIN       12               117            89.43          USA   DIANA BURICK
+-2147479517  DOUGLASSVILLE          PA      Physician Assistant            32               CIPROFLOXACIN HCL       11                88            59.09          USA   DIANA BURICK
 -2147477479      TERRYTOWN          LA  Obstetrics & Gynecology            51                     FLUCONAZOLE       26               216           230.50          USA     IAN NGUYEN
--2147471036         TEMPLE          TX      Physician Assistant            31                     PEN NEEDLES       13              1210           377.15          USA    ERIKA LEIGH
-"09-Nov-22 01:10:48" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
-"09-Nov-22 01:10:48" - validations - INFO - The DataFrame Schema Validation for Dataframe df_fact_sel...
-"09-Nov-22 01:10:48" - validations - INFO - The DataFrame df_fact_sel schema is: 
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(presc_id,IntegerType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(presc_city,StringType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(presc_state,StringType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(presc_spclt,StringType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(years_of_exp,IntegerType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(drug_name,StringType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(trx_cnt,IntegerType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(total_day_supply,IntegerType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(total_drug_cost,DoubleType,true)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(country_name,StringType,false)
-"09-Nov-22 01:10:48" - validations - INFO - 	StructField(presc_fullname,StringType,false)
-"09-Nov-22 01:10:48" - validations - INFO - The DataFrame Schema Validation is completed.
-"09-Nov-22 01:10:48" - presc_run_data_transform - INFO - Transform - city_report() is started...
-"09-Nov-22 01:10:49" - presc_run_data_transform - INFO - Transform - city_report() is completed...
-"09-Nov-22 01:10:49" - presc_run_data_transform - INFO - Transform - top_5_Prescribers() is started...
-"09-Nov-22 01:10:49" - presc_run_data_transform - INFO - Transform - top_5_Prescribers() is completed...
-"09-Nov-22 01:10:49" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_city_final...
-"09-Nov-22 01:10:49" - validations - INFO - The DataFrame top 10 records are:.
-"09-Nov-22 01:12:34" - validations - INFO - 
+-2147471036         TEMPLE          TX      Physician Assistant            34                METFORMIN HCL ER       11               960           196.02          USA    ERIKA LEIGH
+"09-Nov-22 15:33:10" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
+"09-Nov-22 15:33:10" - validations - INFO - The DataFrame Schema Validation for Dataframe df_fact_sel...
+"09-Nov-22 15:33:10" - validations - INFO - The DataFrame df_fact_sel schema is: 
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(presc_id,IntegerType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(presc_city,StringType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(presc_state,StringType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(presc_spclt,StringType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(years_of_exp,IntegerType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(drug_name,StringType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(trx_cnt,IntegerType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(total_day_supply,IntegerType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(total_drug_cost,DoubleType,true)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(country_name,StringType,false)
+"09-Nov-22 15:33:10" - validations - INFO - 	StructField(presc_fullname,StringType,false)
+"09-Nov-22 15:33:10" - validations - INFO - The DataFrame Schema Validation is completed.
+"09-Nov-22 15:33:10" - presc_run_data_transform - INFO - Transform - city_report() is started...
+"09-Nov-22 15:33:10" - presc_run_data_transform - INFO - Transform - city_report() is completed...
+"09-Nov-22 15:33:10" - presc_run_data_transform - INFO - Transform - top_5_Prescribers() is started...
+"09-Nov-22 15:33:11" - presc_run_data_transform - INFO - Transform - top_5_Prescribers() is completed...
+"09-Nov-22 15:33:11" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_city_final...
+"09-Nov-22 15:33:11" - validations - INFO - The DataFrame top 10 records are:.
+"09-Nov-22 15:35:25" - validations - INFO - 
  	          city  state_name     county_name  population  zip_counts  trx_counts  presc_counts
        ANAHEIM  CALIFORNIA          ORANGE      350365          16     1588424          1030
  TRAVERSE CITY    MICHIGAN  GRAND TRAVERSE       50522           3      617013           566
@@ -113,295 +109,40 @@
     ROMEOVILLE    ILLINOIS            WILL       39746           2        9417            17
           SACO       MAINE            YORK       19964           1       84365            56
         OVIEDO     FLORIDA        SEMINOLE       41860           3      172910           108
-"09-Nov-22 01:12:34" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
-"09-Nov-22 01:12:34" - validations - INFO - The DataFrame Schema Validation for Dataframe df_city_final...
-"09-Nov-22 01:12:34" - validations - INFO - The DataFrame df_city_final schema is: 
-"09-Nov-22 01:12:34" - validations - INFO - 	StructField(city,StringType,true)
-"09-Nov-22 01:12:34" - validations - INFO - 	StructField(state_name,StringType,true)
-"09-Nov-22 01:12:34" - validations - INFO - 	StructField(county_name,StringType,true)
-"09-Nov-22 01:12:34" - validations - INFO - 	StructField(population,IntegerType,true)
-"09-Nov-22 01:12:34" - validations - INFO - 	StructField(zip_counts,IntegerType,true)
-"09-Nov-22 01:12:34" - validations - INFO - 	StructField(trx_counts,LongType,true)
-"09-Nov-22 01:12:34" - validations - INFO - 	StructField(presc_counts,LongType,false)
-"09-Nov-22 01:12:34" - validations - INFO - The DataFrame Schema Validation is completed.
-"09-Nov-22 01:12:34" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_presc_final...
-"09-Nov-22 01:12:34" - validations - INFO - The DataFrame top 10 records are:.
-"09-Nov-22 01:15:03" - validations - INFO - 
- 	   presc_id     presc_fullname presc_state country_name  years_of_exp  trx_cnt  total_day_supply  total_drug_cost
- 2036256032        TODD SUMNER          AA          USA            33       62               148           356.28
- 2036256032        TODD SUMNER          AA          USA            38       60               385           258.33
--2046463267     GEORGE CASSIDY          AA          USA            49       45               180           208.76
- 2036408029        RYAN MEHRER          AA          USA            45       38               244           151.01
--2117083349   CATHERINE ROGERS          AA          USA            49       35              1050           261.30
- 2076581050          ULKER TOK          AZ          USA            35     3242            114116        160195.15
- 2056377625  ANDREW RABINOWITZ          AZ          USA            31     3132            216274         76028.99
--2066947266       JASON LEVINE          AZ          USA            44     2323             88055         32106.45
--1672033807      NEIL ATODARIA          AZ          USA            42     2281            148209         50318.98
--2117454907        RAVI BHALLA          AZ          USA            33     2081            101348        125539.09
-"09-Nov-22 01:15:03" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
-"09-Nov-22 01:15:03" - validations - INFO - The DataFrame Schema Validation for Dataframe df_presc_final...
-"09-Nov-22 01:15:03" - validations - INFO - The DataFrame df_presc_final schema is: 
-"09-Nov-22 01:15:03" - validations - INFO - 	StructField(presc_id,IntegerType,true)
-"09-Nov-22 01:15:03" - validations - INFO - 	StructField(presc_fullname,StringType,false)
-"09-Nov-22 01:15:03" - validations - INFO - 	StructField(presc_state,StringType,true)
-"09-Nov-22 01:15:03" - validations - INFO - 	StructField(country_name,StringType,false)
-"09-Nov-22 01:15:03" - validations - INFO - 	StructField(years_of_exp,IntegerType,true)
-"09-Nov-22 01:15:03" - validations - INFO - 	StructField(trx_cnt,IntegerType,true)
-"09-Nov-22 01:15:03" - validations - INFO - 	StructField(total_day_supply,IntegerType,true)
-"09-Nov-22 01:15:03" - validations - INFO - 	StructField(total_drug_cost,DoubleType,true)
-"09-Nov-22 01:15:03" - validations - INFO - The DataFrame Schema Validation is completed.
-"09-Nov-22 01:15:03" - presc_run_data_extraction - INFO - Extraction - extract_files() is started...
-"09-Nov-22 01:16:45" - presc_run_data_extraction - INFO - Extraction - extract_files() is completed...
-"09-Nov-22 01:16:45" - presc_run_data_extraction - INFO - Extraction - extract_files() is started...
-"09-Nov-22 01:19:34" - presc_run_data_extraction - INFO - Extraction - extract_files() is completed...
-"09-Nov-22 01:19:34" - presc_run_data_persist - INFO - Data Persist Postgre Script  - data_persist_rdbms() is started for saving dataframe df_city_final into Postgre Table...
-"09-Nov-22 01:19:35" - presc_run_data_persist - ERROR - Error in the method - data_persist_postgre(). Please check the Stack Trace. An error occurred while calling o385.save.
-: org.postgresql.util.PSQLException: ERROR: permission denied for schema public
-  Position: 14
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
-	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:258)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.executeStatement(JdbcUtils.scala:1031)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.createTable(JdbcUtils.scala:917)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:80)
-	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:45)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:97)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
-	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
-	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
-	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:97)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:93)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:481)
-	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:82)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:481)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
-	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:457)
-	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:93)
-	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:80)
-	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:78)
-	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:115)
-	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:848)
-	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:382)
-	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:355)
-	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:247)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
-	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
-	at py4j.Gateway.invoke(Gateway.java:282)
-	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
-	at py4j.commands.CallCommand.execute(CallCommand.java:79)
-	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
-	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
-	at java.lang.Thread.run(Thread.java:750)
-Traceback (most recent call last):
-  File "/home/xyu041262/PrescPipeline/python/bin/presc_run_data_persist.py", line 32, in data_persist_postgre
-    .option("password", password) \
-  File "/opt/spark3/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 738, in save
-    self._jwrite.save()
-  File "/opt/spark3/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1322, in __call__
-    answer, self.gateway_client, self.target_id, self.name)
-  File "/opt/spark3/python/lib/pyspark.zip/pyspark/sql/utils.py", line 111, in deco
-    return f(*a, **kw)
-  File "/opt/spark3/python/lib/py4j-0.10.9.5-src.zip/py4j/protocol.py", line 328, in get_return_value
-    format(target_id, ".", name), value)
-py4j.protocol.Py4JJavaError: An error occurred while calling o385.save.
-: org.postgresql.util.PSQLException: ERROR: permission denied for schema public
-  Position: 14
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
-	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:258)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.executeStatement(JdbcUtils.scala:1031)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.createTable(JdbcUtils.scala:917)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:80)
-	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:45)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:97)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
-	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
-	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
-	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:97)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:93)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:481)
-	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:82)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:481)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
-	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:457)
-	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:93)
-	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:80)
-	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:78)
-	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:115)
-	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:848)
-	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:382)
-	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:355)
-	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:247)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
-	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
-	at py4j.Gateway.invoke(Gateway.java:282)
-	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
-	at py4j.commands.CallCommand.execute(CallCommand.java:79)
-	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
-	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
-	at java.lang.Thread.run(Thread.java:750)
-
-"09-Nov-22 01:19:35" - root - ERROR - Error occurred in the main() method. Please check the Stack Trace to go to the respective module and fix it. An error occurred while calling o385.save.
-: org.postgresql.util.PSQLException: ERROR: permission denied for schema public
-  Position: 14
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
-	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:258)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.executeStatement(JdbcUtils.scala:1031)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.createTable(JdbcUtils.scala:917)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:80)
-	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:45)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:97)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
-	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
-	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
-	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:97)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:93)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:481)
-	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:82)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:481)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
-	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:457)
-	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:93)
-	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:80)
-	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:78)
-	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:115)
-	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:848)
-	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:382)
-	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:355)
-	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:247)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
-	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
-	at py4j.Gateway.invoke(Gateway.java:282)
-	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
-	at py4j.commands.CallCommand.execute(CallCommand.java:79)
-	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
-	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
-	at java.lang.Thread.run(Thread.java:750)
-Traceback (most recent call last):
-  File "/home/xyu041262/PrescPipeline/python/bin/run_presc_pipeline.py", line 97, in main
-    data_persist_postgre(spark=spark, df=df_city_final, dfName='df_city_final', url="jdbc:postgresql://localhost:6432/prescpipeline", driver="org.postgresql.Driver", dbtable='df_city_final', mode="append", user=gav.user, password=gav.password)
-  File "/home/xyu041262/PrescPipeline/python/bin/presc_run_data_persist.py", line 32, in data_persist_postgre
-    .option("password", password) \
-  File "/opt/spark3/python/lib/pyspark.zip/pyspark/sql/readwriter.py", line 738, in save
-    self._jwrite.save()
-  File "/opt/spark3/python/lib/py4j-0.10.9.5-src.zip/py4j/java_gateway.py", line 1322, in __call__
-    answer, self.gateway_client, self.target_id, self.name)
-  File "/opt/spark3/python/lib/pyspark.zip/pyspark/sql/utils.py", line 111, in deco
-    return f(*a, **kw)
-  File "/opt/spark3/python/lib/py4j-0.10.9.5-src.zip/py4j/protocol.py", line 328, in get_return_value
-    format(target_id, ".", name), value)
-py4j.protocol.Py4JJavaError: An error occurred while calling o385.save.
-: org.postgresql.util.PSQLException: ERROR: permission denied for schema public
-  Position: 14
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2553)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2285)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:323)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:481)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:401)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:322)
-	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:308)
-	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:284)
-	at org.postgresql.jdbc.PgStatement.executeUpdate(PgStatement.java:258)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.executeStatement(JdbcUtils.scala:1031)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcUtils$.createTable(JdbcUtils.scala:917)
-	at org.apache.spark.sql.execution.datasources.jdbc.JdbcRelationProvider.createRelation(JdbcRelationProvider.scala:80)
-	at org.apache.spark.sql.execution.datasources.SaveIntoDataSourceCommand.run(SaveIntoDataSourceCommand.scala:45)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult$lzycompute(commands.scala:75)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.sideEffectResult(commands.scala:73)
-	at org.apache.spark.sql.execution.command.ExecutedCommandExec.executeCollect(commands.scala:84)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.$anonfun$applyOrElse$1(QueryExecution.scala:97)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$5(SQLExecution.scala:103)
-	at org.apache.spark.sql.execution.SQLExecution$.withSQLConfPropagated(SQLExecution.scala:163)
-	at org.apache.spark.sql.execution.SQLExecution$.$anonfun$withNewExecutionId$1(SQLExecution.scala:90)
-	at org.apache.spark.sql.SparkSession.withActive(SparkSession.scala:775)
-	at org.apache.spark.sql.execution.SQLExecution$.withNewExecutionId(SQLExecution.scala:64)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:97)
-	at org.apache.spark.sql.execution.QueryExecution$$anonfun$eagerlyExecuteCommands$1.applyOrElse(QueryExecution.scala:93)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.$anonfun$transformDownWithPruning$1(TreeNode.scala:481)
-	at org.apache.spark.sql.catalyst.trees.CurrentOrigin$.withOrigin(TreeNode.scala:82)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDownWithPruning(TreeNode.scala:481)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.org$apache$spark$sql$catalyst$plans$logical$AnalysisHelper$$super$transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning(AnalysisHelper.scala:267)
-	at org.apache.spark.sql.catalyst.plans.logical.AnalysisHelper.transformDownWithPruning$(AnalysisHelper.scala:263)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.plans.logical.LogicalPlan.transformDownWithPruning(LogicalPlan.scala:30)
-	at org.apache.spark.sql.catalyst.trees.TreeNode.transformDown(TreeNode.scala:457)
-	at org.apache.spark.sql.execution.QueryExecution.eagerlyExecuteCommands(QueryExecution.scala:93)
-	at org.apache.spark.sql.execution.QueryExecution.commandExecuted$lzycompute(QueryExecution.scala:80)
-	at org.apache.spark.sql.execution.QueryExecution.commandExecuted(QueryExecution.scala:78)
-	at org.apache.spark.sql.execution.QueryExecution.assertCommandExecuted(QueryExecution.scala:115)
-	at org.apache.spark.sql.DataFrameWriter.runCommand(DataFrameWriter.scala:848)
-	at org.apache.spark.sql.DataFrameWriter.saveToV1Source(DataFrameWriter.scala:382)
-	at org.apache.spark.sql.DataFrameWriter.saveInternal(DataFrameWriter.scala:355)
-	at org.apache.spark.sql.DataFrameWriter.save(DataFrameWriter.scala:247)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at py4j.reflection.MethodInvoker.invoke(MethodInvoker.java:244)
-	at py4j.reflection.ReflectionEngine.invoke(ReflectionEngine.java:357)
-	at py4j.Gateway.invoke(Gateway.java:282)
-	at py4j.commands.AbstractCommand.invokeMethod(AbstractCommand.java:132)
-	at py4j.commands.CallCommand.execute(CallCommand.java:79)
-	at py4j.ClientServerConnection.waitForCommands(ClientServerConnection.java:182)
-	at py4j.ClientServerConnection.run(ClientServerConnection.java:106)
-	at java.lang.Thread.run(Thread.java:750)
-
+"09-Nov-22 15:35:25" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
+"09-Nov-22 15:35:25" - validations - INFO - The DataFrame Schema Validation for Dataframe df_city_final...
+"09-Nov-22 15:35:25" - validations - INFO - The DataFrame df_city_final schema is: 
+"09-Nov-22 15:35:25" - validations - INFO - 	StructField(city,StringType,true)
+"09-Nov-22 15:35:25" - validations - INFO - 	StructField(state_name,StringType,true)
+"09-Nov-22 15:35:25" - validations - INFO - 	StructField(county_name,StringType,true)
+"09-Nov-22 15:35:25" - validations - INFO - 	StructField(population,IntegerType,true)
+"09-Nov-22 15:35:25" - validations - INFO - 	StructField(zip_counts,IntegerType,true)
+"09-Nov-22 15:35:25" - validations - INFO - 	StructField(trx_counts,LongType,true)
+"09-Nov-22 15:35:25" - validations - INFO - 	StructField(presc_counts,LongType,false)
+"09-Nov-22 15:35:25" - validations - INFO - The DataFrame Schema Validation is completed.
+"09-Nov-22 15:35:25" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is started for Dataframe df_presc_final...
+"09-Nov-22 15:35:25" - validations - INFO - The DataFrame top 10 records are:.
+"09-Nov-22 15:38:51" - validations - INFO - 
+ 	   presc_id     presc_fullname presc_state  years_of_exp  trx_cnt  total_day_supply  total_drug_cost
+ 2036256032        TODD SUMNER          AA            33       62               148           356.28
+ 2036256032        TODD SUMNER          AA            38       60               385           258.33
+-2117083349   CATHERINE ROGERS          AA            49       47              1590           566.41
+-2046463267     GEORGE CASSIDY          AA            49       45               180           208.76
+ 2036408029        RYAN MEHRER          AA            45       38               244           151.01
+-1925541284      GONZALO CELIS          AZ            33     3299            192673         37786.73
+ 2076581050          ULKER TOK          AZ            35     3273            115046        161250.96
+-1339591808   ROBERT BLOOMBERG          AZ            33     3184            225255         74487.78
+-1693215673         PETE COURY          AZ            41     3150            244532         76730.56
+ 2056377625  ANDREW RABINOWITZ          AZ            31     3132            216274         76028.99
+"09-Nov-22 15:38:51" - validations - INFO - The DataFrame Validation by top 10 record df_top10_rec() is completed.
+"09-Nov-22 15:38:51" - validations - INFO - The DataFrame Schema Validation for Dataframe df_presc_final...
+"09-Nov-22 15:38:51" - validations - INFO - The DataFrame df_presc_final schema is: 
+"09-Nov-22 15:38:51" - validations - INFO - 	StructField(presc_id,IntegerType,true)
+"09-Nov-22 15:38:51" - validations - INFO - 	StructField(presc_fullname,StringType,false)
+"09-Nov-22 15:38:51" - validations - INFO - 	StructField(presc_state,StringType,true)
+"09-Nov-22 15:38:51" - validations - INFO - 	StructField(years_of_exp,IntegerType,true)
+"09-Nov-22 15:38:51" - validations - INFO - 	StructField(trx_cnt,LongType,true)
+"09-Nov-22 15:38:51" - validations - INFO - 	StructField(total_day_supply,LongType,true)
+"09-Nov-22 15:38:51" - validations - INFO - 	StructField(total_drug_cost,DoubleType,true)
+"09-Nov-22 15:38:51" - validations - INFO - The DataFrame Schema Validation is completed.
+"09-Nov-22 15:38:51" - root - INFO - presc_run_pipeline.py is completed.
