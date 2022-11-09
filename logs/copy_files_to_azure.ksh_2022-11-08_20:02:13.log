@@ -1,0 +1,44 @@
+copy_files_to_azure.ksh Started...: Tue Nov  8 20:02:13 UTC 2022
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job c9e7d30f-a754-054d-6e72-ffab8c8a3fd1 has started
+Log file is located at: /home/xyu041262/.azcopy/c9e7d30f-a754-054d-6e72-ffab8c8a3fd1.log
+
+INFO: Could not read destination length. If the destination is write-only, use --check-length=false on the command line.
+100.0 %, 2 Done, 0 Failed, 0 Pending, 0 Skipped, 2 Total, 2-sec Throughput (Mb/s): 0.6104
+
+
+Job c9e7d30f-a754-054d-6e72-ffab8c8a3fd1 summary
+Elapsed Time (Minutes): 0.0335
+Number of File Transfers: 2
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 2
+Number of Transfers Completed: 2
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 153297
+Final Job Status: Completed
+
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job edbee285-f6fb-0f41-476e-901ede6044af has started
+Log file is located at: /home/xyu041262/.azcopy/edbee285-f6fb-0f41-476e-901ede6044af.log
+
+INFO: Could not read destination length. If the destination is write-only, use --check-length=false on the command line.
+100.0 %, 3 Done, 0 Failed, 0 Pending, 0 Skipped, 3 Total, 2-sec Throughput (Mb/s): 0.045
+
+
+Job edbee285-f6fb-0f41-476e-901ede6044af summary
+Elapsed Time (Minutes): 0.0333
+Number of File Transfers: 3
+Number of Folder Property Transfers: 0
+Total Number of Transfers: 3
+Number of Transfers Completed: 3
+Number of Transfers Failed: 0
+Number of Transfers Skipped: 0
+TotalBytesTransferred: 11260
+Final Job Status: Completed
+
+The copy_files_to_azure.ksh is Completed...: Tue Nov  8 20:02:17 UTC 2022

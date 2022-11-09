@@ -1,0 +1,11 @@
+copy_files_to_s3.ksh Started...: Tue Nov  8 17:56:31 UTC 2022
+
+The config profile (myprofile) could not be found
+City File /home/xyu041262/PrescPipeline/python/output/dimension_city/part-00000-4be4f5e2-79ec-4e42-b1f8-05ecde36d11e-c000.json.bz2 is pushed to S3.
+
+The config profile (myprofile) could not be found
+Presc file /home/xyu041262/PrescPipeline/python/output/presc/part-00000-ffdf4b3f-a3bb-4cb0-9945-b0b205a2abe6-c000.snappy.orc is pushed to s3.
+
+The config profile (myprofile) could not be found
+Presc file /home/xyu041262/PrescPipeline/python/output/presc/part-00001-ffdf4b3f-a3bb-4cb0-9945-b0b205a2abe6-c000.snappy.orc is pushed to s3.
+The copy_files_to_s3.ksh is Completed...: Tue Nov  8 17:56:35 UTC 2022

@@ -1,0 +1,8 @@
+copy_files_to_s3.ksh Started...: Tue Nov  8 17:59:42 UTC 2022
+Completed 149.7 KiB/149.7 KiB (268.6 KiB/s) with 1 file(s) remainingupload: ../output/dimension_city/part-00000-4be4f5e2-79ec-4e42-b1f8-05ecde36d11e-c000.json.bz2 to s3://prescriberpipelineproj/dimension_city/2022-11-08-17-59-42/part-00000-4be4f5e2-79ec-4e42-b1f8-05ecde36d11e-c000.json.bz2
+City File /home/xyu041262/PrescPipeline/python/output/dimension_city/part-00000-4be4f5e2-79ec-4e42-b1f8-05ecde36d11e-c000.json.bz2 is pushed to S3.
+Completed 5.3 KiB/5.3 KiB (11.4 KiB/s) with 1 file(s) remainingupload: ../output/presc/part-00000-ffdf4b3f-a3bb-4cb0-9945-b0b205a2abe6-c000.snappy.orc to s3://prescriberpipelineproj/presc/2022-11-08-17-59-42/part-00000-ffdf4b3f-a3bb-4cb0-9945-b0b205a2abe6-c000.snappy.orc
+Presc file /home/xyu041262/PrescPipeline/python/output/presc/part-00000-ffdf4b3f-a3bb-4cb0-9945-b0b205a2abe6-c000.snappy.orc is pushed to s3.
+Completed 5.7 KiB/5.7 KiB (12.0 KiB/s) with 1 file(s) remainingupload: ../output/presc/part-00001-ffdf4b3f-a3bb-4cb0-9945-b0b205a2abe6-c000.snappy.orc to s3://prescriberpipelineproj/presc/2022-11-08-17-59-42/part-00001-ffdf4b3f-a3bb-4cb0-9945-b0b205a2abe6-c000.snappy.orc
+Presc file /home/xyu041262/PrescPipeline/python/output/presc/part-00001-ffdf4b3f-a3bb-4cb0-9945-b0b205a2abe6-c000.snappy.orc is pushed to s3.
+The copy_files_to_s3.ksh is Completed...: Tue Nov  8 17:59:47 UTC 2022

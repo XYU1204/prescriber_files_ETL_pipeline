@@ -1,0 +1,5 @@
+delete_hdfs_output_paths.ksh Started...: Mon Nov  7 22:02:35 UTC 2022
+The HDFS output directory PrescPipeline/output/dimension_city is available. Proceed to delete.
+Deleted PrescPipeline/output/dimension_city
+The HDFS Output directory PrescPipeline/output/dimension_city is deleted before extraction.
+delete_hdfs_output_paths.ksh is Completed...: Mon Nov  7 22:02:46 UTC 2022
